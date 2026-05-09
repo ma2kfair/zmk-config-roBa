@@ -80,6 +80,7 @@
             compatible = "zmk,behavior-sensor-rotate-var";
             #sensor-binding-cells = <2>;
             bindings = <&msc>, <&msc>;
+
             tap-ms = <100>; // 信号の長さを定義
         };
     };
@@ -95,7 +96,7 @@
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 QMARK  &lt 2 INT_HENKAN  &lt_to_layer_0 1 BACKSPACE      &kp SPACE       &lt 2 ENTER                             &mlt 4 MB1
             >;
 
-            sensor-bindings = <&inc_dec_msc MOVE_Y(15) MOVE_Y(-15)>;
+            sensor-bindings = <&inc_dec_msc MOVE_Y(5) MOVE_Y(-5)>;
         };
 
         FUNCTION {
@@ -106,7 +107,7 @@
 &trans  &trans  &trans   &trans   &trans   &trans      &kp BACKSPACE  &kp DELETE                                                     &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp A B>;
+            sensor-bindings = <&inc_dec_kp LC(TAB) LS(LC(TAB))>;
         };
 
         NUM {

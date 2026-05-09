@@ -9,6 +9,13 @@
     quick-tap-ms = <0>;
 };
 
+&msc {
+    /* スクロール入力を少し「重く」して安定させる */
+    acceleration-delay_ms = <10>;
+    time-to-max-speed-ms = <40>;
+    delay-ms = <10>; 
+};
+
 &trackball {
     automouse-layer = <4>;
     scroll-layers = <5>;

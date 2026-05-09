@@ -96,9 +96,7 @@
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 QMARK  &lt 2 INT_HENKAN  &lt_to_layer_0 1 BACKSPACE      &kp SPACE       &lt 2 ENTER                             &mlt 4 MB1
             >;
 
-            // 右回しで下スクロール、左回しで上スクロールにする場合
-
-            sensor-bindings = <&inc_dec_kp MS_WHL_UP MS_WHL_DN>;
+            sensor-bindings = <&inc_dec_msc SCROLL_VERT(15) SCROLL_VERT(-15)>;
         };
 
         FUNCTION {

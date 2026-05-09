@@ -10,10 +10,9 @@
 };
 
 &msc {
-    /* スクロール入力を少し「重く」して安定させる */
-    acceleration-delay_ms = <10>;
+    acceleration-delay-ms = <10>;
     time-to-max-speed-ms = <40>;
-    delay-ms = <10>; 
+    delay-ms = <10>;
 };
 
 &trackball {

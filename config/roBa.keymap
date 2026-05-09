@@ -9,6 +9,12 @@
     quick-tap-ms = <0>;
 };
 
+&msc {
+    delay-ms = <100>;
+    time-to-max-speed-ms = <300>;
+    acceleration-exponent = <1>;
+};
+
 &trackball {
     automouse-layer = <4>;
     scroll-layers = <5>;
@@ -80,7 +86,6 @@
             compatible = "zmk,behavior-sensor-rotate-var";
             #sensor-binding-cells = <2>;
             bindings = <&msc>, <&msc>;
-            tap-ms = <20>; // 信号の長さを定義
         };
     };
 

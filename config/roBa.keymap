@@ -96,7 +96,7 @@
             >;
 
             // 右回しで下スクロール、左回しで上スクロールにする場合
-            sensor-bindings = <&inc_dec_msc SCROLL_DOWN SCROLL_UP>;
+            sensor-bindings = <&inc_dec_msc MOVE_Y(15) MOVE_Y(-15)>;
         };
 
         FUNCTION {

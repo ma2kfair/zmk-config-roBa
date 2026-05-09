@@ -76,7 +76,7 @@
             bindings = <&mo>, <&mkp>;
         };
 
-        &inc_dec_msc {
+        inc_dec_msc: inc_dec_msc {
             compatible = "zmk,behavior-sensor-rotate-var";
             #sensor-binding-cells = <2>;
             bindings = <&msc>, <&msc>;

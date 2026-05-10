@@ -10,8 +10,8 @@
 };
 
 &msc {
-    delay-ms = <100>;
-    time-to-max-speed-ms = <300>;
+    delay-ms = <20>;
+    time-to-max-speed-ms = <600>;
     acceleration-exponent = <1>;
 };
 

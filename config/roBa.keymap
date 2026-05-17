@@ -56,6 +56,11 @@
             key-positions = <34 35 9>;
             layers = <0>;
         };
+
+        Scroll_Layer {
+            bindings = <&to 5>;
+            key-positions = <32 33>;
+        };
     };
 
     macros {
@@ -94,6 +99,7 @@
             label = "ENCODER_MSC_DOWN_UP";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+
             tap-ms = <20>;
         };
 
@@ -104,6 +110,7 @@
             label = "ENCODER_MSC_LR";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_RIGHT>, <&msc SCRL_LEFT>;
+
             tap-ms = <20>;
         };
     };
